@@ -2,7 +2,7 @@
 
 Used in [Zrimec & Lapanje 2018: DNA structure at the plasmid origin-of-transfer indicates its potential transfer range](https://www.nature.com/articles/s41598-018-20157-y)
 
-The Permanova method (Anderson et al. 2001) implemented in Matlab.
+The Permanova method (Anderson 2001) implemented in Matlab.
 Bootstraps of input sequences are generated as permutations for the background distributions.
 
 main script - create bootstraps, 
