@@ -2,10 +2,21 @@
 
 Used in [Zrimec & Lapanje 2018: DNA structure at the plasmid origin-of-transfer indicates its potential transfer range](https://www.nature.com/articles/s41598-018-20157-y)
 
-The Permanova method (Anderson 2001) implemented in Matlab.
-Bootstraps of input sequences are generated as permutations for the background distributions.
+## Description
 
-main script - create bootstraps, 
-a. call main functions, calculate p-value (to do upload script) 
-b. F calculaton with distance matrix input 
-c. F calculation with sequence input and distances between all character pairs defined by second input matrix
+<img src="https://github.com/JanZrimec/NP_MANOVA_bootstrap/blob/master/Figure_1.png" width="160">
+
+The Permanova method (Anderson 2001) implemented in Matlab. Enables any distance metric to be used to measure variance.
+
+Both the F-test and t-test (pairwise F-test) are included for custom distance matrix input or sequence input, where p-distance (Hamming) is used. Bootstraps of input sequences are generated as permutations for the background distributions.
+
+## Usage
+See script Script_example_run.m.
+
+```[F, Sw, St] = Anova_F_ratio(seqs,y);```
+
+where:
+* seqs .. character array of input sequnces
+* y .. grouping variable, array of equal length as seqs
+* F .. F-stastic, p value is obtained from bootstrap F ditribution with functions make_bootstraps.m, pvalue_boots.m
+* Sw, St .. within group and total sum of squares used to calculate R2 with function get_R2.m
