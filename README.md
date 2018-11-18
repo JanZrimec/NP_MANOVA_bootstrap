@@ -8,7 +8,7 @@ Used in [Zrimec & Lapanje 2018: DNA structure at the plasmid origin-of-transfer 
 
 The Permanova method (Anderson 2001) implemented in Matlab. Enables any distance metric to be used to measure variance.
 
-Both the F-test and t-test (pairwise F-test) are included for custom distance matrix input, or sequence input where p-distance (Hamming) is used. Bootstraps of input sequences are generated as permutations for the background distributions.
+Both the F-test and t-test (pairwise F-test) are included for custom distance matrix input, or sequence input where p-distance (Hamming) is used. Bootstraps of input sequences are generated for the background distribution.
 
 ## Usage
 See script Script_example_run.m.
